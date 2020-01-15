@@ -17,7 +17,7 @@ EXPOSE 8080
 
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "target/reactive-web-1.0.jar"]
 
-# To build image and run the container of the image
+# To build image and run the docker container of the image
 docker build -t mywebfluxapp -f Dockerfile . </br>
 docker run -d -p 8080:8080 --name mywebflux mywebfluxapp </br>
 
