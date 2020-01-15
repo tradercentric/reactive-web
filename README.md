@@ -46,7 +46,6 @@ oc get all --selector app=reactive-web -o name </br>
 oc delete all --selector app=reactive-web </br>
 
 # Minishift remove and install
-
 minishift delete --clear-cache </br>
 delete %USERPROFILE%/.minishift </br>
 minishift start --show-libmachine-logs </br>
