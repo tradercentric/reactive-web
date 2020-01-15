@@ -38,14 +38,15 @@ oc import-image java:8 --from=registry.access.redhat.com/redhat-openjdk-18/openj
 oc new-app --name reactive-web "java:8~https://github.com/tradercentric/reactive-web.git" </br>
 oc expose svc/reactive-web --port 8080 </br>
 
-# oc logs & status & etc.
+# Oc logs & status & etc.
 oc logs -f bc/reactive-web </br>
 oc rollout status -w dc/reactive-web </br>
 echo http://$(oc get route reactive-web -o jsonpath='{.spec.host}{"\n"}') </br>
 oc get all --selector app=reactive-web -o name </br>
 oc delete all --selector app=reactive-web </br>
 
-# minishift remove and install
+# Minishift remove and install
+
 minishift delete --clear-cache </br>
 delete %USERPROFILE%/.minishift </br>
 minishift start --show-libmachine-logs </br>
