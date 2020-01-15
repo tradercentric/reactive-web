@@ -1,0 +1,14 @@
+spring:
+#  main:
+#    web-application-type: NONE
+  jackson:
+    serialization:
+      indent-output: true
+
+logging:
+  level:
+    org.springframework.transaction: TRACE
+    org.springframework.data.r2dbc.connectionfactory: DEBUG
+
+server:
+  port: 8080
