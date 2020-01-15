@@ -34,6 +34,8 @@ ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "target/r
 #oc logs -f bc/reactive-web </br>
 #oc rollout status -w dc/reactive-web </br>
 #echo http://$(oc get route reactive-web -o jsonpath='{.spec.host}{"\n"}') </br>
+#oc get all --selector app=reactive-web -o name </br>
+#oc delete all --selector app=reactive-web </br>
 #
 ## minishift remove and install
 #minishift delete --clear-cache </br>

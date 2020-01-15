@@ -40,6 +40,8 @@ oc expose svc/reactive-web --port 8080 </br>
 oc logs -f bc/reactive-web </br>
 oc rollout status -w dc/reactive-web </br>
 echo http://$(oc get route reactive-web -o jsonpath='{.spec.host}{"\n"}') </br>
+oc get all --selector app=reactive-web -o name </br>
+oc delete all --selector app=reactive-web </br>
 
 # minishift remove and install
 minishift delete --clear-cache </br>
