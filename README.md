@@ -1,8 +1,10 @@
-# webflux-example 
+# Learn SpringBoot, WebFlux, Rest, Swagger, Docker, and OpenShift/Minishift here 
 
-Rest api doc: http://localhost:8080/swagger-ui.html
+Once the application is running, the available rest calls are listed at </br>
 
-# Dockerfile (At the directory where pom.xml resided):
+http://localhost:8080/swagger-ui.html
+
+# Dockerfile (in the directory where pom.xml resided):
 
 FROM registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift as build
 
