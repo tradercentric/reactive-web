@@ -1,5 +1,4 @@
-# Learn SpringBoot, WebFlux, Rest, Swagger, Docker, and OpenShift/Minishift here 
-
+# Learn SpringBoot, WebFlux, Rest, Swagger, Docker, and OpenShift/Minishift
 Once the application is running, the available rest calls are listed at </br>
 
 http://localhost:8080/swagger-ui.html
